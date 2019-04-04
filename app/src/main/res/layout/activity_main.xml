@@ -16,10 +16,21 @@
         />
 
     <TextView
-        android:id="@+id/nama"
+        android:id="@+id/tv_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/img"
+        android:textSize="15dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="20sp"
+        android:textStyle="bold"
+        android:text="TEST"/>
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_info"
         android:text="Choose your country!"
         android:layout_marginTop="20dp"
         android:textColor="@color/colorPrimaryDark"

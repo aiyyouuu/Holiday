@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Kalender_US"></activity>
+        <activity android:name=".AwalActivity"></activity>
+        <activity android:name=".Kalender_US" />
         <activity android:name=".Kalender_Indonesia" />
         <activity android:name=".MainActivity">
             <intent-filter>
