@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences preferences = getApplicationContext().getSharedPreferences("Next", MODE_PRIVATE);
         final SharedPreferences.Editor editor = preferences.edit();
 
+        info = findViewById(R.id.in);
         kata = preferences.getString("Tanggal Yang Dicari","");
 
         if (!kata.equals("")){

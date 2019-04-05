@@ -16,7 +16,7 @@
         />
 
     <TextView
-        android:id="@+id/tv_info"
+        android:id="@+id/in"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/img"
@@ -30,7 +30,7 @@
         android:id="@+id/nama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_info"
+        android:layout_below="@id/in"
         android:text="Choose your country!"
         android:layout_marginTop="20dp"
         android:textColor="@color/colorPrimaryDark"
