@@ -1,5 +1,6 @@
 package com.example.holiday;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
@@ -17,7 +18,7 @@ public class Kalender_Indonesia extends AppCompatActivity implements BottomNavig
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kalender__indonesia);
         bottomNavigationView = findViewById(R.id.bnv);
-        loadFragment(new TodayFragment());
+        startActivity(new Intent(getApplicationContext(),TodayFragment.class));
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
     }
 
@@ -32,12 +33,12 @@ public class Kalender_Indonesia extends AppCompatActivity implements BottomNavig
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()){
             case R.id.menu1:
-                fragment = new TodayFragment();
+                startActivity(new Intent(getApplicationContext(),Kalender_Indonesia.class));
                 break;
 
-            case R.id.menu2:
+            /*case R.id.menu2:
                 fragment = new AllFragment();
-                break;
+                break;*/
         }
         return loadFragment(fragment);
     }

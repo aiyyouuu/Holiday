@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AwalActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".Kalender_US" />
+        <activity android:name=".TodayFragment" />
         <activity android:name=".Kalender_Indonesia" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".AwalActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

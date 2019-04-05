@@ -19,7 +19,7 @@ public class AwalActivity extends AppCompatActivity {
         setContentView(R.layout.activity_awal);
 
         input = findViewById(R.id.et_input);
-        cari = findViewById(R.id.btn_cari);
+        cari = findViewById(R.id.btn_next);
 
         SharedPreferences preferences = getApplicationContext().getSharedPreferences("Next", MODE_PRIVATE);
         final SharedPreferences.Editor editor = preferences.edit();

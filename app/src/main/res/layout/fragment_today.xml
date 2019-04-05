@@ -3,18 +3,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".TodayFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/radio_indo"
+        android:textSize="15sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"/>
 
     <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
+        android:id="@+id/activity_main"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60sp"
         >
-        <TextView
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/radio_indo"
-            android:id="@+id/tv_indo" />
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <DatePicker
+                    android:layout_width="match_parent"
+                    android:layout_height="392dp"
+                    android:id="@+id/datePicker" />
+
+                <TextView
+                    android:text="Display_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Display_Date" />
+
+                <Button
+                    android:text="TAMPILKAN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Display Date"
+                    android:id="@+id/txt1" />
+
+                <android.support.design.widget.BottomNavigationView
+                    android:id="@+id/bnv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    app:menu="@menu/bottomnavigation"
+                    ></android.support.design.widget.BottomNavigationView>
+
+            </LinearLayout>
+        </ScrollView>
     </RelativeLayout>
+
+
 
 </FrameLayout>
