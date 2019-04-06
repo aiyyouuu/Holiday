@@ -46,10 +46,10 @@ public class MainActivity extends AppCompatActivity {
                 int selectedId = radioGroup.getCheckedRadioButtonId();
                 switch (selectedId){
                     case R.id.rdIndo :
-                        startActivity(new Intent(getApplicationContext(),Kalender_Indonesia.class));
+                        startActivity(new Intent(getApplicationContext(),TodayActivity.class));
                         break;
                     case R.id.rdUS :
-                        startActivity(new Intent(getApplicationContext(),Kalender_Indonesia.class));
+                        startActivity(new Intent(getApplicationContext(),TodayActivity.class));
                         break;
                 }
             }

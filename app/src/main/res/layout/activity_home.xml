@@ -13,8 +13,7 @@
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/bnv"
+        android:layout_height="wrap_content"
         >
 
         <TextView
@@ -25,6 +24,7 @@
             android:textStyle="bold"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="15dp"
+            android:layout_marginTop="20sp"
             android:layout_marginBottom="15sp"/>
 
     <com.prolificinteractive.materialcalendarview.MaterialCalendarView
@@ -32,19 +32,21 @@
         android:id="@+id/calendarView"
         android:layout_width="350dp"
         android:layout_height="350dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="30sp"
         android:layout_centerInParent="true"
         app:mcv_showOtherDates="all"
         app:mcv_selectionColor="#00F"
         />
     </FrameLayout>
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/bnv"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/bottomnavigation"
-        ></android.support.design.widget.BottomNavigationView>
-
+        android:text="ADD MEMO"
+        android:textStyle="bold"
+        android:layout_below="@id/container"
+        android:layout_marginTop="60sp"
+        android:layout_marginLeft="200sp"
+        />
 </RelativeLayout>
