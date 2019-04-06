@@ -1,4 +1,4 @@
-package com.example.holiday;
+package com.example.holiday.Fragment;
 
 
 import android.os.Bundle;
@@ -9,7 +9,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+
+import com.example.holiday.Adapter.AllAdapter;
+import com.example.holiday.View.MainView;
+import com.example.holiday.Model.AllModel;
+import com.example.holiday.Presenter.AllPresenter;
+import com.example.holiday.R;
 
 import java.util.ArrayList;
 import java.util.List;

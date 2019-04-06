@@ -1,4 +1,4 @@
-package com.example.holiday;
+package com.example.holiday.Adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -6,12 +6,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.holiday.R;
-import com.example.holiday.AllModel;
+import com.example.holiday.Model.AllModel;
 
 import java.util.ArrayList;
 import java.util.List;

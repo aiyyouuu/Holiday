@@ -1,4 +1,4 @@
-package com.example.holiday;
+package com.example.holiday.Model;
 
 public class AllModel {
     String tanggal;

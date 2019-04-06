@@ -1,6 +1,6 @@
-package com.example.holiday;
+package com.example.holiday.View;
 
-import com.example.holiday.AllModel;
+import com.example.holiday.Model.AllModel;
 
 import java.util.List;
 

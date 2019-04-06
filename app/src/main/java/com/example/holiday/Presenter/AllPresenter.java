@@ -1,6 +1,9 @@
-package com.example.holiday;
+package com.example.holiday.Presenter;
 
 import android.content.Context;
+
+import com.example.holiday.View.MainView;
+import com.example.holiday.Model.AllModel;
 
 import java.util.ArrayList;
 import java.util.List;
