@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.MainActivity">
+    tools:context=".View.MainActivity"
+    android:background="#FFA07A">
 
     <ImageView
         android:id="@+id/img"
@@ -12,7 +13,7 @@
         android:layout_height="120dp"
         android:src="@drawable/date"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="70dp"
         />
 
     <TextView
@@ -36,7 +37,7 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18dp"
         android:textStyle="bold"
-        android:layout_marginLeft="40sp"
+        android:layout_marginLeft="60dp"
         android:layout_marginBottom="10dp"
         />
 
@@ -76,7 +77,20 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/rbGrup"
         android:text="Search"
-        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="60sp"
+        android:layout_marginTop="20sp"
+        android:layout_toRightOf="@id/btn_back"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rbGrup"
+        android:text="Back"
+        android:layout_marginLeft="60sp"
         android:background="@color/colorPrimaryDark"
         android:textColor="@android:color/white"
         android:layout_marginTop="20sp"

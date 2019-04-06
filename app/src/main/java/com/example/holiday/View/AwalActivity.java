@@ -30,7 +30,7 @@ public class AwalActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (!input.getText().toString().equals("")){
-                    editor.putString("Tanggal Yang Dicari", input.getText().toString());
+                    editor.putString("Your Name", input.getText().toString());
                     editor.commit();
 
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));

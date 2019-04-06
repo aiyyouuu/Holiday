@@ -15,7 +15,7 @@ import com.example.holiday.R;
 public class MainActivity extends AppCompatActivity {
     private RadioGroup radioGroup;
     private RadioButton radioButton;
-    private Button btnCari;
+    private Button btnCari, btnBack;
     private TextView info;
 
     private String kata;
@@ -29,13 +29,20 @@ public class MainActivity extends AppCompatActivity {
         final SharedPreferences.Editor editor = preferences.edit();
 
         info = findViewById(R.id.in);
-        kata = preferences.getString("Tanggal Yang Dicari","");
+        kata = preferences.getString("Your Name","");
 
         if (!kata.equals("")){
-            info.setText("Tanggal : " + kata);
+            info.setText("Hallo " + kata);
         }
         radioGroup = (RadioGroup) findViewById(R.id.rbGrup);
         btnCari = (Button) findViewById(R.id.btn_cari);
+        btnBack = (Button) findViewById(R.id.btn_back);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),AwalActivity.class));
+            }
+        });
         addListenerOnButtonCari();
     }
 
