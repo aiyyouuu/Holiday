@@ -16,7 +16,7 @@ public class Kalender_Indonesia extends AppCompatActivity implements BottomNavig
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kalender__indonesia);
+        setContentView(R.layout.activity_home);
         bottomNavigationView = findViewById(R.id.bnv);
         startActivity(new Intent(getApplicationContext(),TodayFragment.class));
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
