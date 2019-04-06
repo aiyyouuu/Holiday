@@ -8,7 +8,6 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context=".TodayFragment"
     android:orientation="vertical">
 
     <FrameLayout
@@ -25,13 +24,15 @@
             android:text="@string/radio_indo"
             android:textStyle="bold"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="15dp"/>
+            android:textSize="15dp"
+            android:layout_marginBottom="15sp"/>
 
     <com.prolificinteractive.materialcalendarview.MaterialCalendarView
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/calendarView"
         android:layout_width="350dp"
         android:layout_height="350dp"
+        android:layout_marginTop="15dp"
         android:layout_centerInParent="true"
         app:mcv_showOtherDates="all"
         app:mcv_selectionColor="#00F"

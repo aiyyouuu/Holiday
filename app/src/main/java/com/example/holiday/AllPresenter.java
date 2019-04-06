@@ -32,5 +32,6 @@ public class AllPresenter {
         allModels.add(all);
         all = new AllModel("Rabu, 25 Desember 2019", "Hari Raya Natal"," Hari raya umat Kristen yang diperingati setiap tahun oleh umat Kristiani pada tanggal 25 Desember untuk memperingati hari kelahiran Yesus Kristus.");
         allModels.add(all);
+        view.onSuccess(allModels);
     }
 }

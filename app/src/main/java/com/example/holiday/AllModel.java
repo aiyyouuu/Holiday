@@ -16,4 +16,6 @@ public class AllModel {
     public String getNamaHariBesar(){return NamaHariBesar;}
 
     public String getOverview(){return overview; }
+
+    public void setOverview(String overview){this.overview = overview;}
 }

@@ -29,8 +29,7 @@ public class AllFragment extends Fragment implements MainView {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_all, container, false);
-        return view;
+        return inflater.inflate(R.layout.fragment_all, container, false);
     }
 
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState){

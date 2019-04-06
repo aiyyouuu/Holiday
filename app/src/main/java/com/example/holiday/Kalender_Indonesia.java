@@ -18,7 +18,7 @@ public class Kalender_Indonesia extends AppCompatActivity implements BottomNavig
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         bottomNavigationView = findViewById(R.id.bnv);
-        startActivity(new Intent(getApplicationContext(),TodayFragment.class));
+        loadFragment(new AllFragment());
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
     }
 
@@ -32,12 +32,14 @@ public class Kalender_Indonesia extends AppCompatActivity implements BottomNavig
 
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()){
-            /*case R.id.menu1:
-                startActivity(new Intent(getApplicationContext(),Kalender_Indonesia.class));
-                break;*/
-
+            case R.id.menu1:
+                fragment = new TFragment();
+                break;
             case R.id.menu2:
                 fragment = new AllFragment();
+                break;
+            case R.id.menu3:
+                fragment = new MemoFragment();
                 break;
         }
         return loadFragment(fragment);
